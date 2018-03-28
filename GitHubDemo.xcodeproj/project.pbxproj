@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12DEE273D380D480B2E4EAD3 /* libPods-GitHubDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 208C205D964459048E313779 /* libPods-GitHubDemo.a */; };
 		7B07C66A206B304B00D7D036 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B07C669206B304B00D7D036 /* AppDelegate.m */; };
 		7B07C66D206B304B00D7D036 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B07C66C206B304B00D7D036 /* ViewController.m */; };
 		7B07C670206B304B00D7D036 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B07C66E206B304B00D7D036 /* Main.storyboard */; };
@@ -15,6 +16,11 @@
 		7B07C678206B304B00D7D036 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B07C677206B304B00D7D036 /* main.m */; };
 		7B07C682206B304B00D7D036 /* GitHubDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B07C681206B304B00D7D036 /* GitHubDemoTests.m */; };
 		7B07C68D206B304B00D7D036 /* GitHubDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B07C68C206B304B00D7D036 /* GitHubDemoUITests.m */; };
+		7B07C6E0206B7D5700D7D036 /* HttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B07C6DF206B7D5700D7D036 /* HttpManager.m */; };
+		7B07C6E4206B891D00D7D036 /* CommonTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B07C6E3206B891D00D7D036 /* CommonTool.m */; };
+		7B07C6EE206B8C0700D7D036 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B07C6EA206B8C0700D7D036 /* GTMBase64.m */; };
+		7B07C6EF206B8C0700D7D036 /* SecurityUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B07C6EB206B8C0700D7D036 /* SecurityUtil.m */; };
+		7B07C6F0206B8C0700D7D036 /* NSData+AES.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B07C6EC206B8C0700D7D036 /* NSData+AES.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		208C205D964459048E313779 /* libPods-GitHubDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GitHubDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		46F4F7CD048DEDF69DB6064E /* Pods-GitHubDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-GitHubDemo/Pods-GitHubDemo.release.xcconfig"; sourceTree = "<group>"; };
 		7B07C665206B304B00D7D036 /* GitHubDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B07C668206B304B00D7D036 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7B07C669206B304B00D7D036 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +59,18 @@
 		7B07C688206B304B00D7D036 /* GitHubDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitHubDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B07C68C206B304B00D7D036 /* GitHubDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GitHubDemoUITests.m; sourceTree = "<group>"; };
 		7B07C68E206B304B00D7D036 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B07C6DE206B7D5700D7D036 /* HttpManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpManager.h; sourceTree = "<group>"; };
+		7B07C6DF206B7D5700D7D036 /* HttpManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HttpManager.m; sourceTree = "<group>"; };
+		7B07C6E2206B891D00D7D036 /* CommonTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonTool.h; sourceTree = "<group>"; };
+		7B07C6E3206B891D00D7D036 /* CommonTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonTool.m; sourceTree = "<group>"; };
+		7B07C6E6206B8C0700D7D036 /* NSData+AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AES.h"; sourceTree = "<group>"; };
+		7B07C6E8206B8C0700D7D036 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		7B07C6E9206B8C0700D7D036 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		7B07C6EA206B8C0700D7D036 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		7B07C6EB206B8C0700D7D036 /* SecurityUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecurityUtil.m; sourceTree = "<group>"; };
+		7B07C6EC206B8C0700D7D036 /* NSData+AES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AES.m"; sourceTree = "<group>"; };
+		7B07C6ED206B8C0700D7D036 /* SecurityUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecurityUtil.h; sourceTree = "<group>"; };
+		D99F296727C21F973281A88C /* Pods-GitHubDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GitHubDemo/Pods-GitHubDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12DEE273D380D480B2E4EAD3 /* libPods-GitHubDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +106,8 @@
 				7B07C680206B304B00D7D036 /* GitHubDemoTests */,
 				7B07C68B206B304B00D7D036 /* GitHubDemoUITests */,
 				7B07C666206B304B00D7D036 /* Products */,
+				B44D8CD2417C85DD57989740 /* Pods */,
+				81AA4934E81F7660F749ACD2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +128,9 @@
 				7B07C669206B304B00D7D036 /* AppDelegate.m */,
 				7B07C66B206B304B00D7D036 /* ViewController.h */,
 				7B07C66C206B304B00D7D036 /* ViewController.m */,
+				7B07C6E5206B8C0700D7D036 /* AES */,
+				7B07C6E1206B88FC00D7D036 /* ToolClass */,
+				7B07C6DD206B7D3000D7D036 /* HttpManager */,
 				7B07C66E206B304B00D7D036 /* Main.storyboard */,
 				7B07C671206B304B00D7D036 /* Assets.xcassets */,
 				7B07C673206B304B00D7D036 /* LaunchScreen.storyboard */,
@@ -132,6 +158,63 @@
 			path = GitHubDemoUITests;
 			sourceTree = "<group>";
 		};
+		7B07C6DD206B7D3000D7D036 /* HttpManager */ = {
+			isa = PBXGroup;
+			children = (
+				7B07C6DE206B7D5700D7D036 /* HttpManager.h */,
+				7B07C6DF206B7D5700D7D036 /* HttpManager.m */,
+			);
+			path = HttpManager;
+			sourceTree = "<group>";
+		};
+		7B07C6E1206B88FC00D7D036 /* ToolClass */ = {
+			isa = PBXGroup;
+			children = (
+				7B07C6E2206B891D00D7D036 /* CommonTool.h */,
+				7B07C6E3206B891D00D7D036 /* CommonTool.m */,
+			);
+			path = ToolClass;
+			sourceTree = "<group>";
+		};
+		7B07C6E5206B8C0700D7D036 /* AES */ = {
+			isa = PBXGroup;
+			children = (
+				7B07C6E6206B8C0700D7D036 /* NSData+AES.h */,
+				7B07C6E7206B8C0700D7D036 /* GTMBase64 */,
+				7B07C6EB206B8C0700D7D036 /* SecurityUtil.m */,
+				7B07C6EC206B8C0700D7D036 /* NSData+AES.m */,
+				7B07C6ED206B8C0700D7D036 /* SecurityUtil.h */,
+			);
+			path = AES;
+			sourceTree = "<group>";
+		};
+		7B07C6E7206B8C0700D7D036 /* GTMBase64 */ = {
+			isa = PBXGroup;
+			children = (
+				7B07C6E8206B8C0700D7D036 /* GTMBase64.h */,
+				7B07C6E9206B8C0700D7D036 /* GTMDefines.h */,
+				7B07C6EA206B8C0700D7D036 /* GTMBase64.m */,
+			);
+			path = GTMBase64;
+			sourceTree = "<group>";
+		};
+		81AA4934E81F7660F749ACD2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				208C205D964459048E313779 /* libPods-GitHubDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B44D8CD2417C85DD57989740 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D99F296727C21F973281A88C /* Pods-GitHubDemo.debug.xcconfig */,
+				46F4F7CD048DEDF69DB6064E /* Pods-GitHubDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +222,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7B07C691206B304B00D7D036 /* Build configuration list for PBXNativeTarget "GitHubDemo" */;
 			buildPhases = (
+				76BC7BF65930C282728B0892 /* [CP] Check Pods Manifest.lock */,
 				7B07C661206B304B00D7D036 /* Sources */,
 				7B07C662206B304B00D7D036 /* Frameworks */,
 				7B07C663206B304B00D7D036 /* Resources */,
+				DF2679F625F99EAA6C548AA2 /* [CP] Embed Pods Frameworks */,
+				E4AFE5A2EE5B7F366969852E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -260,14 +346,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		76BC7BF65930C282728B0892 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GitHubDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF2679F625F99EAA6C548AA2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GitHubDemo/Pods-GitHubDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4AFE5A2EE5B7F366969852E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GitHubDemo/Pods-GitHubDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7B07C661206B304B00D7D036 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7B07C66D206B304B00D7D036 /* ViewController.m in Sources */,
+				7B07C6EE206B8C0700D7D036 /* GTMBase64.m in Sources */,
+				7B07C6E4206B891D00D7D036 /* CommonTool.m in Sources */,
+				7B07C6EF206B8C0700D7D036 /* SecurityUtil.m in Sources */,
 				7B07C678206B304B00D7D036 /* main.m in Sources */,
 				7B07C66A206B304B00D7D036 /* AppDelegate.m in Sources */,
+				7B07C6F0206B8C0700D7D036 /* NSData+AES.m in Sources */,
+				7B07C6E0206B7D5700D7D036 /* HttpManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +570,7 @@
 		};
 		7B07C692206B304B00D7D036 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D99F296727C21F973281A88C /* Pods-GitHubDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -442,6 +585,7 @@
 		};
 		7B07C693206B304B00D7D036 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46F4F7CD048DEDF69DB6064E /* Pods-GitHubDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
