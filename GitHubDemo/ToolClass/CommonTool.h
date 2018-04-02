@@ -19,4 +19,6 @@
 + (NSString *)getAppVersion;
 ///获取运营商
 + (NSString *)getCarrierName;
+///判断为空
++ (BOOL)isBlank:(id)obj;
 @end

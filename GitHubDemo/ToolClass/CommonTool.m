@@ -12,6 +12,31 @@
 #import <CoreTelephony/CTCarrier.h>
 #import <UIKit/UIKit.h>
 @implementation CommonTool
+/**
+ *  判断空类型
+ */
++ (BOOL)isBlank:(id)obj {
+    if (obj == nil || obj == NULL) {
+        return YES;
+    }
+    if ([obj isKindOfClass:[NSNull class]]) {
+        return YES;
+    }
+    if ([obj isKindOfClass:[NSArray class]]) {
+        NSArray *array = obj;
+        if (array.count == 0) {
+            return YES;
+        }
+    }
+    //fix by liuyi: 输入为空的没判断
+    if ([obj isKindOfClass:[NSString class]]) {
+        if ([[obj stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] length]==0) {
+            return YES;
+        }
+    }
+    
+    return NO;
+}
 ///uuid
 +(NSString *)uuid {
     CFUUIDRef puuid = CFUUIDCreate( nil );

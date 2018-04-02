@@ -1,0 +1,16 @@
+//
+//  searchAll.pch
+//  GitHubDemo
+//
+//  Created by zrq on 2018/3/28.
+//  Copyright © 2018年 zrq. All rights reserved.
+//
+
+#ifndef searchAll_pch
+#define searchAll_pch
+#define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
+#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* searchAll_pch */

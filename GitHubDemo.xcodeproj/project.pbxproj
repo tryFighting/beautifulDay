@@ -21,6 +21,10 @@
 		7B07C6EE206B8C0700D7D036 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B07C6EA206B8C0700D7D036 /* GTMBase64.m */; };
 		7B07C6EF206B8C0700D7D036 /* SecurityUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B07C6EB206B8C0700D7D036 /* SecurityUtil.m */; };
 		7B07C6F0206B8C0700D7D036 /* NSData+AES.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B07C6EC206B8C0700D7D036 /* NSData+AES.m */; };
+		7B55BEFE20722AD90033B797 /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B55BEFD20722AD90033B797 /* LoginModel.m */; };
+		7B55BF0420722E590033B797 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B55BF0320722E590033B797 /* LoginViewController.m */; };
+		7B55BF0820722F550033B797 /* LoginCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B55BF0620722F550033B797 /* LoginCellTableViewCell.m */; };
+		7B55BF0920722F550033B797 /* LoginCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B55BF0720722F550033B797 /* LoginCellTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +74,14 @@
 		7B07C6EB206B8C0700D7D036 /* SecurityUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecurityUtil.m; sourceTree = "<group>"; };
 		7B07C6EC206B8C0700D7D036 /* NSData+AES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AES.m"; sourceTree = "<group>"; };
 		7B07C6ED206B8C0700D7D036 /* SecurityUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecurityUtil.h; sourceTree = "<group>"; };
+		7B07C6F1206B937A00D7D036 /* searchAll.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = searchAll.pch; sourceTree = "<group>"; };
+		7B55BEFC20722AD90033B797 /* LoginModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginModel.h; sourceTree = "<group>"; };
+		7B55BEFD20722AD90033B797 /* LoginModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginModel.m; sourceTree = "<group>"; };
+		7B55BF0220722E580033B797 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		7B55BF0320722E590033B797 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		7B55BF0520722F550033B797 /* LoginCellTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginCellTableViewCell.h; sourceTree = "<group>"; };
+		7B55BF0620722F550033B797 /* LoginCellTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginCellTableViewCell.m; sourceTree = "<group>"; };
+		7B55BF0720722F550033B797 /* LoginCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginCellTableViewCell.xib; sourceTree = "<group>"; };
 		D99F296727C21F973281A88C /* Pods-GitHubDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GitHubDemo/Pods-GitHubDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -128,6 +140,8 @@
 				7B07C669206B304B00D7D036 /* AppDelegate.m */,
 				7B07C66B206B304B00D7D036 /* ViewController.h */,
 				7B07C66C206B304B00D7D036 /* ViewController.m */,
+				7B07C6F1206B937A00D7D036 /* searchAll.pch */,
+				7B55BEF820722AB90033B797 /* LoginViewController_登录 */,
 				7B07C6E5206B8C0700D7D036 /* AES */,
 				7B07C6E1206B88FC00D7D036 /* ToolClass */,
 				7B07C6DD206B7D3000D7D036 /* HttpManager */,
@@ -197,6 +211,53 @@
 			);
 			path = GTMBase64;
 			sourceTree = "<group>";
+		};
+		7B55BEF820722AB90033B797 /* LoginViewController_登录 */ = {
+			isa = PBXGroup;
+			children = (
+				7B55BF0A20722FD60033B797 /* NetWork */,
+				7B55BEF920722AB90033B797 /* LoginModel */,
+				7B55BEFA20722AB90033B797 /* LoginView */,
+				7B55BEFB20722AB90033B797 /* LoginViewController */,
+			);
+			path = "LoginViewController_登录";
+			sourceTree = "<group>";
+		};
+		7B55BEF920722AB90033B797 /* LoginModel */ = {
+			isa = PBXGroup;
+			children = (
+				7B55BEFC20722AD90033B797 /* LoginModel.h */,
+				7B55BEFD20722AD90033B797 /* LoginModel.m */,
+			);
+			path = LoginModel;
+			sourceTree = "<group>";
+		};
+		7B55BEFA20722AB90033B797 /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				7B55BF0520722F550033B797 /* LoginCellTableViewCell.h */,
+				7B55BF0620722F550033B797 /* LoginCellTableViewCell.m */,
+				7B55BF0720722F550033B797 /* LoginCellTableViewCell.xib */,
+			);
+			path = LoginView;
+			sourceTree = "<group>";
+		};
+		7B55BEFB20722AB90033B797 /* LoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7B55BF0220722E580033B797 /* LoginViewController.h */,
+				7B55BF0320722E590033B797 /* LoginViewController.m */,
+			);
+			path = LoginViewController;
+			sourceTree = "<group>";
+		};
+		7B55BF0A20722FD60033B797 /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = NetWork;
+			path = "GitHubDemo/LoginViewController_登录/NetWork";
+			sourceTree = SOURCE_ROOT;
 		};
 		81AA4934E81F7660F749ACD2 /* Frameworks */ = {
 			isa = PBXGroup;
@@ -327,6 +388,7 @@
 				7B07C675206B304B00D7D036 /* LaunchScreen.storyboard in Resources */,
 				7B07C672206B304B00D7D036 /* Assets.xcassets in Resources */,
 				7B07C670206B304B00D7D036 /* Main.storyboard in Resources */,
+				7B55BF0920722F550033B797 /* LoginCellTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,11 +466,14 @@
 			files = (
 				7B07C66D206B304B00D7D036 /* ViewController.m in Sources */,
 				7B07C6EE206B8C0700D7D036 /* GTMBase64.m in Sources */,
+				7B55BEFE20722AD90033B797 /* LoginModel.m in Sources */,
 				7B07C6E4206B891D00D7D036 /* CommonTool.m in Sources */,
 				7B07C6EF206B8C0700D7D036 /* SecurityUtil.m in Sources */,
 				7B07C678206B304B00D7D036 /* main.m in Sources */,
+				7B55BF0820722F550033B797 /* LoginCellTableViewCell.m in Sources */,
 				7B07C66A206B304B00D7D036 /* AppDelegate.m in Sources */,
 				7B07C6F0206B8C0700D7D036 /* NSData+AES.m in Sources */,
+				7B55BF0420722E590033B797 /* LoginViewController.m in Sources */,
 				7B07C6E0206B7D5700D7D036 /* HttpManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -575,6 +640,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 98298VBF9J;
+				GCC_PREFIX_HEADER = /Users/zrq/Documents/GitHub/beautifulDay/GitHubDemo/searchAll.pch;
 				INFOPLIST_FILE = GitHubDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = md.GitHubDemo;
@@ -590,6 +656,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 98298VBF9J;
+				GCC_PREFIX_HEADER = /Users/zrq/Documents/GitHub/beautifulDay/GitHubDemo/searchAll.pch;
 				INFOPLIST_FILE = GitHubDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = md.GitHubDemo;
