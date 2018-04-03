@@ -26,11 +26,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.loginInfo = [[LoginModel alloc]init];
     [self createLoginTableView];//创建登录视图
 }
 #pragma mark --创建登录视图
 - (void)createLoginTableView{
+    //设置头视图
+    
     self.infoTableView = [[UITableView alloc]initWithFrame:CGRectMake(20, 0, SCREEN_WIDTH-40, SCREEN_HEIGHT) style:UITableViewStylePlain];
     self.infoTableView.delegate = self;
     self.infoTableView.showsVerticalScrollIndicator = NO;
@@ -39,6 +41,30 @@
      //[self.infoTableView  setSeparatorColor:[UIColor blueColor]];
     self.infoTableView.dataSource = self;
     [self.view addSubview:self.infoTableView];
+    
+    //设置尾视图
+    UIView *foot = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 60)];
+    
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.frame = CGRectMake(40, 10, SCREEN_WIDTH - 80, 40);
+    [foot addSubview:btn];
+    [btn setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
+    [btn setTitle:@"登录" forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(showLoginModel:) forControlEvents:UIControlEventTouchUpInside];
+    self.infoTableView.tableFooterView = foot;
+}
+- (void)showLoginModel:(UIButton *)btn{
+    [self.infoTableView reloadData];
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"登录信息展示" message:[NSString stringWithFormat:@"Name:%@-password:%@",self.loginInfo.loginName,self.loginInfo.password] preferredStyle:UIAlertControllerStyleAlert];
+    [alert addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        
+    }]];
+    [alert addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        
+    }]];
+    [self presentViewController:alert animated:YES completion:^{
+        
+    }];
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 3;
@@ -60,7 +86,7 @@
     }else if (indexPath.row == 1) {
         [cell setImageWithLeftImageName:@"login_ico_yh" andRightButtonIconName:@"" andPlceHolder:@"工号" andText:self.loginInfo.loginName andIndex:indexPath.row andSecureTextEntry:NO];
     }else {
-        [cell setImageWithLeftImageName:@"login_ico_mima" andRightButtonIconName:@"" andPlceHolder:@"密码" andText:self.loginInfo.password andIndex:indexPath.row andSecureTextEntry:YES];
+        [cell setImageWithLeftImageName:@"login_ico_mima" andRightButtonIconName:@"" andPlceHolder:@"密码" andText:self.loginInfo.password andIndex:indexPath.row andSecureTextEntry:NO];
     }
     //点击选择公司
     cell.companyBlock = ^(){
@@ -81,6 +107,7 @@
     return cell;
 }
 //登录视图的开发
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
