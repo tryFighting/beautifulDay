@@ -21,6 +21,7 @@
 		7B07C6EE206B8C0700D7D036 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B07C6EA206B8C0700D7D036 /* GTMBase64.m */; };
 		7B07C6EF206B8C0700D7D036 /* SecurityUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B07C6EB206B8C0700D7D036 /* SecurityUtil.m */; };
 		7B07C6F0206B8C0700D7D036 /* NSData+AES.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B07C6EC206B8C0700D7D036 /* NSData+AES.m */; };
+		7B1442CE2073800E0049B534 /* appFunction.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7B1442CD2073800E0049B534 /* appFunction.plist */; };
 		7B55BEFE20722AD90033B797 /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B55BEFD20722AD90033B797 /* LoginModel.m */; };
 		7B55BF0420722E590033B797 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B55BF0320722E590033B797 /* LoginViewController.m */; };
 		7B55BF0820722F550033B797 /* LoginCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B55BF0620722F550033B797 /* LoginCellTableViewCell.m */; };
@@ -75,6 +76,7 @@
 		7B07C6EC206B8C0700D7D036 /* NSData+AES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AES.m"; sourceTree = "<group>"; };
 		7B07C6ED206B8C0700D7D036 /* SecurityUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecurityUtil.h; sourceTree = "<group>"; };
 		7B07C6F1206B937A00D7D036 /* searchAll.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = searchAll.pch; sourceTree = "<group>"; };
+		7B1442CD2073800E0049B534 /* appFunction.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = appFunction.plist; sourceTree = "<group>"; };
 		7B55BEFC20722AD90033B797 /* LoginModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginModel.h; sourceTree = "<group>"; };
 		7B55BEFD20722AD90033B797 /* LoginModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginModel.m; sourceTree = "<group>"; };
 		7B55BF0220722E580033B797 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				7B07C671206B304B00D7D036 /* Assets.xcassets */,
 				7B07C673206B304B00D7D036 /* LaunchScreen.storyboard */,
 				7B07C676206B304B00D7D036 /* Info.plist */,
+				7B1442CD2073800E0049B534 /* appFunction.plist */,
 				7B07C677206B304B00D7D036 /* main.m */,
 			);
 			path = GitHubDemo;
@@ -385,6 +388,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B1442CE2073800E0049B534 /* appFunction.plist in Resources */,
 				7B07C675206B304B00D7D036 /* LaunchScreen.storyboard in Resources */,
 				7B07C672206B304B00D7D036 /* Assets.xcassets in Resources */,
 				7B07C670206B304B00D7D036 /* Main.storyboard in Resources */,

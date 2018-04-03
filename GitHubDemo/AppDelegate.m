@@ -17,6 +17,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    NSArray *dataDict =  [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"appFunction" ofType:@"plist"]];
+   
+    
     return YES;
 }
 

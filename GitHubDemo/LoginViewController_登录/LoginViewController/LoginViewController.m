@@ -20,6 +20,7 @@
 @property (assign, nonatomic) BOOL IS_REMEBER_PASSWORD;
 ///是否记住密码按钮
 @property (strong, nonatomic) UIButton *remeberButton;
+///声明block
 @end
 
 @implementation LoginViewController
@@ -29,6 +30,7 @@
     self.loginInfo = [[LoginModel alloc]init];
     [self createLoginTableView];//创建登录视图
 }
+
 #pragma mark --创建登录视图
 - (void)createLoginTableView{
     //设置头视图
@@ -112,7 +114,8 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+- (void)get{
+}
 /*
 #pragma mark - Navigation
 

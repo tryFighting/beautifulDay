@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>appTypeName</key>
+		<string>应用类型1</string>
+		<key>appInfo</key>
+		<array>
+			<dict>
+				<key>appIconUrl</key>
+				<string>图片</string>
+				<key>appLinkUrl</key>
+				<string>https://www.baidu.com</string>
+				<key>appType</key>
+				<string>1</string>
+				<key>appName</key>
+				<string>应用名字1</string>
+			</dict>
+			<dict>
+				<key>appName</key>
+				<string>应用名字2</string>
+				<key>appType</key>
+				<string>1</string>
+				<key>appLinkUrl</key>
+				<string>https://www.baidu.com</string>
+				<key>appIconUrl</key>
+				<string>appIconUrl</string>
+			</dict>
+			<dict>
+				<key>appIconUrl</key>
+				<string>图片地址</string>
+				<key>appLinkUrl</key>
+				<string>http://www.taobao.com</string>
+				<key>appType</key>
+				<string>1</string>
+				<key>appName</key>
+				<string>应用名字3</string>
+			</dict>
+			<dict>
+				<key>appIconUrl</key>
+				<string>2</string>
+				<key>appLinkUrl</key>
+				<string>ddcx</string>
+				<key>appType</key>
+				<string>1</string>
+				<key>appName</key>
+				<string>应用名字四</string>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>
